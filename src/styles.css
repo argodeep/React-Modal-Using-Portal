@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000080;
+  animation-name: loading;
+  animation-duration: 0.35s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.modal-container .modal-view {
+  background-color: #ffffff;
+  border-radius: 4px;
+  min-width: 70vw;
+}
+
+.modal-container .modal-view .modal-header {
+  padding: 15px;
+  border-bottom: 1px solid lightcyan;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.modal-container .modal-view .modal-body {
+  padding: 15px;
+}
+
+.modal-container .modal-view .modal-footer {
+  padding: 15px;
+  border-top: 1px solid lightcyan;
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
